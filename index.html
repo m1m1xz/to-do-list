@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To Do List </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <header> 
+            <div class="character"> ☆ </div>
+                <h1> The To Do List </h1>
+                <p> Get your work done! </p>
+        </header>
+        <section class="add task">
+            <input 
+            type="text"
+            id="taskInput"
+            placeholder="What's the task ?"
+            >
+            <button id="addBtn">
+                + Add 
+            </button>
+        </section>
+        <div class="filters"> 
+            <button class="filter active" data-filter="all">
+                All 
+            </button>
+            <button class="filter" data-filter="completed">
+                Completed 
+            </button>
+        </div>
+        <ul id="taskList"></ul>
+        <div id="emptyMessage" class="empty">
+            <div> * </div>
+            <p> No task yet! </p>
+            <span> Add a task to get started </span>
+        </div>
+            <footer>
+            <span id="taskCount">0 tasks</span>
+            <button id="clearCompleted">
+                Clear completed 
+            </button>
+        </footer>
+        </div>
+    
+    <script src="script.js"> </script>
+
+</body>
+</html>
