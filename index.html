@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="todo-app">
+    <header class="app-header">
+      <div class="header-main">
+        <h1>Tasks</h1>
+        <span class="task-count" id="taskCount">0 remaining</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </header>
+
+    <form class="input-form" id="todoForm">
+      <input type="text" id="taskInput" placeholder="Add a task..." required>
+      <select id="categorySelect">
+        <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Ideas">Ideas</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <button type="submit" id="addBtn">Add</button>
+    </form>
+
+    <nav class="filter-nav">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </nav>
+
+    <ul class="task-list" id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
